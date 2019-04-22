@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp2
+namespace WindowsFormsApp3
 {
     class SquarePrism:Square
     {
@@ -17,9 +17,10 @@ namespace WindowsFormsApp2
         }
 
 
-        public SquarePrism(int height)
+        public SquarePrism(int height, int side)
         {
             Height = height;
+            Side = side;
         }
 
 
@@ -39,7 +40,5 @@ namespace WindowsFormsApp2
         {
             return "\nHeight: " + Height + "\nBottom Side: " + Side + "\nSize: " + SizePrism(Height, Area(Side)) + "\nDiagonal of Prism: " + DiagonalPrism(Height, Side);
         }
-
-
     }
 }
